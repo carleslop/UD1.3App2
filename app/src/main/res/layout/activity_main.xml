@@ -6,22 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/view1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/teal_200"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/purple_500"
-        app:layout_constraintTop_toBottomOf="@id/view1"
-        app:layout_constraintStart_toStartOf="@id/view1"
-        app:layout_constraintEnd_toEndOf="@id/view1"/>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/view21"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            app:layout_constraintEnd_toStartOf="@id/view1"/>
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            app:layout_constraintStart_toEndOf="@id/view1"/>
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            app:layout_constraintStart_toEndOf="@id/view1"/>
+
+        <View
+            android:id="@+id/view31"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/view22"
+            app:layout_constraintStart_toStartOf="@id/view1"/>
+
+        <View
+            android:id="@+id/view41"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@id/view31"
+            app:layout_constraintStart_toStartOf="@id/view21"/>
+
+        <View
+            android:id="@+id/view42"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@id/view31"
+            app:layout_constraintStart_toEndOf="@id/view31"/>
+
+        <View
+            android:id="@+id/view51"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
+            app:layout_constraintTop_toBottomOf="@id/view41"
+            app:layout_constraintEnd_toStartOf="@id/view41"/>
+
+        <View
+            android:id="@+id/view52"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
+            app:layout_constraintTop_toBottomOf="@id/view41"
+            app:layout_constraintStart_toEndOf="@id/view41"/>
+
+        <View
+            android:id="@+id/view53"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
+            app:layout_constraintTop_toBottomOf="@id/view42"
+            app:layout_constraintStart_toEndOf="@id/view42"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
